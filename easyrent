@@ -1,0 +1,10 @@
+body{
+    background-color: darkblue;
+    font-family: Arial;
+}
+
+#body{
+    background: rgba(255, 255, 255, 0.8);
+	border-radius: 30px;
+	margin: 0 50px 0 50px;
+}

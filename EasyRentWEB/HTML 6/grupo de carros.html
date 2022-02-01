@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Easy Rent - Carros do grupo
+    </title>
+    <link href="easy.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+
+</head>
+<body onload="myFunction()">
+    <div class="sk-cube-grid" id="loader">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+    <script>
+        var myVar;
+        function myFunction() {
+            myVar = setTimeout(showPage, 1500);
+        }
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <div style="display:none;" id="myDiv">
+        <header>
+            <img src="Imagens/Easy Rent.jpg" id="LogoHeader">
+        </header>
+
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <nav class="menu">
+            <ul>
+                <li id="menu_li"><a href="index.html">Home</a></li>
+                <li id="menu_li"><a href="easyrent.html">A Easy Rent</a></li>
+                <li id="menu_li"><a href="ofertas.html">Ofertas</a></li>
+                <li id="menu_li"><a href="grupo de carros.html">Grupo de Carros</a></li>
+                <li id="menu_li"><a href="localizacao.html">Localização</a></li>
+                <li id="menu_li"><a href="../index.aspx">Reservas Online</a></li>
+            </ul>
+        </nav>
+        <br />
+        <br />
+        <div class="container">
+            <h1 id="grupodecarros"><i>Grupo de carros</i></h1>
+        </div>
+        <br />
+        <br />
+        <div class="container">
+            <h3 id="grupodecarros">Escolha uma categoria e conheça nossos carros!</h3>
+        </div>
+        <br />
+        <div class="container">
+            <div class="col col-2">
+                <div class="retangulo">
+                    <img src="Imagens/Carros/Hatch/volkswagen up.png" id="imghatch">
+                    <a href="hatch.html" class="carrohtml">
+                        <div class="teste">
+                            <p id="txtbotao">HATCH</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="retangulo2">
+                    <img src="Imagens/Carros/Sedan/chevrolet prisma.png" id="imgsedan">
+                    <a href="Sedan.html" class="carrohtml">
+                        <div class="teste2">
+                            <p id="txtbotao">SEDAN</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="retangulo3">
+                    <img src="Imagens/Carros/suv/jeep renegade.png" id="imgsuv">
+                    <a href="SUV.html" class="carrohtml">
+                        <div class="teste3">
+                            <p id="txtbotao">SUV</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="retangulo3">
+                    <img src="Imagens/Carros/VAN/fiat doblo essence.png" id="imgvan"></a>
+                    <a href="van.html" class="carrohtml">
+                        <div class="teste3">
+                            <p id="txtbotao">VAN</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col col-13">
+                <div class="retangulo3">
+                    <img src="Imagens/Carros/Premium/honda civic.png" id="imgpremium">
+                    <a href="premium.html" class="carrohtml">
+                        <div class="teste4">
+                            <p id="txtbotao">PREMIUM</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="linha">
+            <div class="container">
+                <div class="col col-2">
+                    <img src="Imagens/celular.png" id="celular" />
+                    <p id="index3">Baixe o nosso app e tenha acesso a ofertas exclusivas.</p>
+                </div>
+                <div class="col col-2">
+                    <img src="Imagens/telefone.png" id="telefone" />
+                    <p id="index4">Telereservas: 0800 258 4539</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col col-2">
+                <img src="Imagens/2018-09-27-13-45-29.png" id="iphone" />
+            </div>
+            <div class="col col-2">
+                <p id="txtpropaganda">Baixe o nosso app e tenha descontos e vantagens exclusivas na hora de reservar a sua locação!</p>
+                <img src="Imagens/appstore.png" id="appstore" /><img src="Imagens/playstore.png" id="playstore" />
+            </div>
+        </div>
+        <!--</div> 181036237061-->
+        <footer class="rodape">
+            <p id="footer">©2018 Easy Rent. Todos os direitos reservados | Design by CDV© - 2018</p>
+        </footer>
+
+        </div>
+</body>
+</html>

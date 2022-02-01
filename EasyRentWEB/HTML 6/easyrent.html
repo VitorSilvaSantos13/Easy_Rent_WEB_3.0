@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>
+        A Easy Rent
+    </title>
+    <link href="easy.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+
+</head>
+<body onload="myFunction()">
+    <div class="sk-cube-grid" id="loader">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+    <script>
+        var myVar;
+        function myFunction() {
+            myVar = setTimeout(showPage, 1500);
+        }
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <div style="display:none;" id="myDiv">
+
+        <header>
+            <img src="Imagens/Easy Rent.jpg" id="LogoHeader">
+        </header>
+
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <nav class="menu">
+            <ul>
+                <li id="menu_li"><a href="index.html">Home</a></li>
+                <li id="menu_li"><a href="easyrent.html">A Easy Rent</a></li>
+                <li id="menu_li"><a href="ofertas.html">Ofertas</a></li>
+                <li id="menu_li"><a href="grupo de carros.html">Grupo de Carros</a></li>
+                <li id="menu_li"><a href="localizacao.html">Localização</a></li>
+                <li id="menu_li"><a href="../index.aspx">Reservas Online</a></li>
+            </ul>
+        </nav>
+
+        <div id="body">
+            <br>
+
+            <div class="container">
+                <div class="col col-8">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tellus neque, ultricies non nibh ut, placerat vestibulum lacus. Aliquam erat volutpat. Aenean fermentum eros lorem, at accumsan urna dapibus vel. Quisque dapibus eu diam in cursus. Mauris sagittis molestie dignissim. Donec gravida pretium varius. Donec vel lobortis libero.
+                    </p>
+                    <p>
+                        Maecenas maximus in odio eu consequat. Donec ultricies vitae lectus et sodales. Nam laoreet nec velit dignissim convallis. Morbi lacinia urna vitae eleifend dapibus. Morbi venenatis tortor dui, eu imperdiet nisi elementum eget. Aliquam sodales mauris leo, sed elementum risus ultrices non. Aenean ac convallis nibh. Donec convallis ex ullamcorper diam suscipit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper vulputate egestas. Nunc rhoncus urna at nulla commodo rhoncus.
+                    </p>
+                </div>
+                <div class="col col-8">
+                    <img src="Imagens/Easy Rent.jpg" id="SobreFoto">
+                </div>
+                <div class="col col-7">
+                    <img src="Imagens/Carros/Premium/sorento.png" id="imgsorento3">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col col-9">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et lacus mi. Duis tincidunt nibh purus, a posuere orci cursus a. Quisque lacus velit, volutpat quis dui eget, scelerisque finibus turpis. Donec in dictum libero. Quisque posuere ante turpis, eget interdum velit elementum vel. Sed nunc dolor, cursus nec venenatis ac, aliquet maximus dolor. Ut et tincidunt leo. Cras sodales consequat leo, at laoreet dolor auctor sit amet. Curabitur ipsum nisl, bibendum et luctus vitae, pharetra at dolor. Aenean a dui fermentum, viverra dolor nec, rutrum diam. Phasellus posuere nulla magna, posuere finibus neque ullamcorper ac. Integer in erat tortor.
+                    </p>
+                    <p>
+                        Aenean vitae augue placerat, blandit urna sed, viverra metus. Nunc nec velit nisl. Maecenas ut libero nibh. Curabitur fermentum tincidunt sapien eu consectetur. Nulla pulvinar est eget convallis pharetra. In hac habitasse platea dictumst. Vivamus vitae metus aliquam, varius nisl et, aliquam magna. Sed egestas ipsum sed nisl consectetur elementum. Sed auctor, ligula id semper auctor, ligula urna pulvinar justo, rhoncus interdum lectus leo id diam. Fusce cursus feugiat justo, sit amet pulvinar tortor rutrum eu. Mauris molestie tristique odio a ultricies.
+                    </p>
+                    <p>
+                        Vivamus vitae tempus erat, eget elementum purus. Duis luctus nulla vestibulum, rhoncus augue sit amet, lacinia augue. Mauris at eros vel lectus pellentesque imperdiet sed non augue. Curabitur luctus vitae nisi ac ultricies. Ut non velit ut turpis porta pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed placerat lacus at orci consequat dapibus vitae id ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed porta ex. Praesent blandit, justo sit amet imperdiet interdum, mauris libero imperdiet mauris, aliquet fringilla turpis mauris et nunc. Suspendisse bibendum at magna et venenatis. Fusce maximus, enim a condimentum egestas, turpis sapien condimentum elit, eget iaculis arcu tellus quis sapien. Aliquam quis neque enim. Integer commodo ac dolor sed malesuada.
+                    </p>
+                </div>
+                <div class="col col-7">
+                    <img src="Imagens/Carros/Premium/sorento.png" id="imgsorento3">
+                    <img src="Imagens/Carros/Premium/sorento.png" id="imgsorento3">
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <footer>
+            ©2018 Easy Rent. Todos os direitos reservados | Design by CDV© - 2018
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,342 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{887E2E8B-B1BB-4D01-86E5-FA4E748964E2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyRentWEB</RootNamespace>
+    <AssemblyName>EasyRentWEB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adicionarCupom.aspx" />
+    <Content Include="atualizacaoCliente.aspx" />
+    <Content Include="cadastroCliente.aspx" />
+    <Content Include="Easy Rent.png" />
+    <Content Include="easyrent.css" />
+    <Content Include="Global.asax" />
+    <Content Include="GruposCarros.aspx" />
+    <Content Include="HTML 6\carro individual %282%29.html" />
+    <Content Include="HTML 6\carro individual.html" />
+    <Content Include="HTML 6\duvidas.html" />
+    <Content Include="HTML 6\easy.css" />
+    <Content Include="HTML 6\easyrent.html" />
+    <Content Include="HTML 6\grupo de carros.html" />
+    <Content Include="HTML 6\hatch.html" />
+    <Content Include="HTML 6\Imagens\2018-09-27-13-45-29.png" />
+    <Content Include="HTML 6\Imagens\appstore.png" />
+    <Content Include="HTML 6\Imagens\aviao.png" />
+    <Content Include="HTML 6\Imagens\banners\oferta1.jpg.jpg" />
+    <Content Include="HTML 6\Imagens\banners\oferta2.jpg" />
+    <Content Include="HTML 6\Imagens\banners\oferta4.jpg" />
+    <Content Include="HTML 6\Imagens\banners\propaganda 1.jpg" />
+    <Content Include="HTML 6\Imagens\banners\propaganda 2.jpg" />
+    <Content Include="HTML 6\Imagens\banners\propaganda 3.jpg" />
+    <Content Include="HTML 6\Imagens\banners\teste 1.jpg" />
+    <Content Include="HTML 6\Imagens\Cadeado.png" />
+    <Content Include="HTML 6\Imagens\carro.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\CaracterísticasHatch.jpg" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\Chevrolet Oniz.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\fiat argo.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\fiat mobi.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\Ford Ka.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\hyundai_hb20.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\Renault kwid.jpg" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\sandero vibe.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\volkswagen fox.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\volkswagen gol.png" />
+    <Content Include="HTML 6\Imagens\carros\Hatch\volkswagen up.png" />
+    <Content Include="HTML 6\Imagens\carros\oniz\Chevrolet Oniz.png" />
+    <Content Include="HTML 6\Imagens\carros\oniz\painel1.png" />
+    <Content Include="HTML 6\Imagens\carros\Premium\audi q3.png" />
+    <Content Include="HTML 6\Imagens\carros\Premium\bmw x6.png" />
+    <Content Include="HTML 6\Imagens\carros\Premium\camaro.png" />
+    <Content Include="HTML 6\Imagens\carros\Premium\CaracterísticasPremium.jpg" />
+    <Content Include="HTML 6\Imagens\carros\Premium\honda civic.png" />
+    <Content Include="HTML 6\Imagens\carros\Premium\land rover evoque.png" />
+    <Content Include="HTML 6\Imagens\carros\Premium\sorento.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\CaracterísticasSedan.jpg" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\chevrolet cobalt.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\chevrolet prisma.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\ford ka+.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\ford new fiesta sedan.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\honda city.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\hyundai hb20s.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\jac j3 turin.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\nissan versa.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\ranault logan.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\toyota etios sedan.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\volkswagen voyage.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\CaracterísticasSUV.jpg" />
+    <Content Include="HTML 6\Imagens\carros\suv\ford ecosport.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\honda hr-v.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\honda wr-v.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\hyundai creta.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\jeep compass.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\jeep renegade.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\nissan kicks.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\renault captur.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\renault duster.png" />
+    <Content Include="HTML 6\Imagens\carros\suv\toyota sw4.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\CaracterísticasVan.jpg" />
+    <Content Include="HTML 6\Imagens\carros\VAN\chevrolet spin ltz.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\citroen grand c4 picasso.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\dodge journey.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\fiat doblo essence.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\jac j6.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\jac t8.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\mitsubishe outlander confort.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\peugeot 5008.png" />
+    <Content Include="HTML 6\Imagens\carros\VAN\volkswagen tiguan.png" />
+    <Content Include="HTML 6\Imagens\celular.png" />
+    <Content Include="HTML 6\Imagens\Easy Rent.jpg" />
+    <Content Include="HTML 6\Imagens\hotel.png" />
+    <Content Include="HTML 6\Imagens\carros\Sedan\KaSedan.png" />
+    <Content Include="HTML 6\Imagens\oft1.jpg" />
+    <Content Include="HTML 6\Imagens\oft1mini.jpg" />
+    <Content Include="HTML 6\Imagens\oft2 mini.jpg" />
+    <Content Include="HTML 6\Imagens\oft2.jpg" />
+    <Content Include="HTML 6\Imagens\Pin.png" />
+    <Content Include="HTML 6\Imagens\playstore.png" />
+    <Content Include="HTML 6\Imagens\telefone.png" />
+    <Content Include="HTML 6\Imagens\usuario.png" />
+    <Content Include="HTML 6\index.html" />
+    <Content Include="HTML 6\localizacao.html" />
+    <Content Include="HTML 6\lupa2.png" />
+    <Content Include="HTML 6\modelo.txt" />
+    <Content Include="HTML 6\Imagens\oferta.png" />
+    <Content Include="HTML 6\ofertas.html" />
+    <Content Include="HTML 6\ofertas2.html" />
+    <Content Include="HTML 6\ofertas3.html" />
+    <Content Include="HTML 6\ofertas4.html" />
+    <Content Include="HTML 6\Onix.html" />
+    <Content Include="HTML 6\premium.html" />
+    <Content Include="HTML 6\Sedan.html" />
+    <Content Include="HTML 6\SUV.html" />
+    <Content Include="HTML 6\teste.js" />
+    <Content Include="HTML 6\transicao.txt" />
+    <Content Include="HTML 6\van.html" />
+    <Content Include="HTML 6\Wireframe\aba_carro_individual.png" />
+    <Content Include="HTML 6\Wireframe\aba_duvidas.png" />
+    <Content Include="HTML 6\Wireframe\aba_grupodecarros.png" />
+    <Content Include="HTML 6\Wireframe\aba_home.png" />
+    <Content Include="HTML 6\Wireframe\aba_oferta.png" />
+    <Content Include="HTML 6\Wireframe\aba_sobre_a_pagina.png" />
+    <Content Include="HTML 6\Wireframe\carrosdosgrupos.png" />
+    <Content Include="HTML 6\Wireframe\Localização.png" />
+    <Content Include="paginaCliente.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="PaginaFuncionario.aspx" />
+    <Content Include="Reserva.aspx" />
+    <Content Include="visualizarLocacao.aspx" />
+    <Content Include="visualizarReserva.aspx" />
+    <Content Include="visualizarReservaCliente.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adicionarCupom.aspx.cs">
+      <DependentUpon>adicionarCupom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adicionarCupom.aspx.designer.cs">
+      <DependentUpon>adicionarCupom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="atualizacaoCliente.aspx.cs">
+      <DependentUpon>atualizacaoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="atualizacaoCliente.aspx.designer.cs">
+      <DependentUpon>atualizacaoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroCliente.aspx.cs">
+      <DependentUpon>cadastroCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroCliente.aspx.designer.cs">
+      <DependentUpon>cadastroCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classe\Cliente.cs" />
+    <Compile Include="Classe\Conexoes.cs" />
+    <Compile Include="Classe\Cupom.cs" />
+    <Compile Include="Classe\Funcionario.cs" />
+    <Compile Include="Classe\Locacao.cs" />
+    <Compile Include="Classe\Login.cs" />
+    <Compile Include="Classe\Reserva.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GruposCarros.aspx.cs">
+      <DependentUpon>GruposCarros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GruposCarros.aspx.designer.cs">
+      <DependentUpon>GruposCarros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginaCliente.aspx.cs">
+      <DependentUpon>paginaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginaCliente.aspx.designer.cs">
+      <DependentUpon>paginaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaFuncionario.aspx.cs">
+      <DependentUpon>PaginaFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaFuncionario.aspx.designer.cs">
+      <DependentUpon>PaginaFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reserva.aspx.cs">
+      <DependentUpon>Reserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserva.aspx.designer.cs">
+      <DependentUpon>Reserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarLocacao.aspx.cs">
+      <DependentUpon>visualizarLocacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visualizarLocacao.aspx.designer.cs">
+      <DependentUpon>visualizarLocacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarReserva.aspx.cs">
+      <DependentUpon>visualizarReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visualizarReserva.aspx.designer.cs">
+      <DependentUpon>visualizarReserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarReservaCliente.aspx.cs">
+      <DependentUpon>visualizarReservaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visualizarReservaCliente.aspx.designer.cs">
+      <DependentUpon>visualizarReservaCliente.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTML 6\Ficha de Responsabilidades CDV.docx" />
+    <Content Include="HTML 6\Imagens\banners\oferta3.psd" />
+    <Content Include="HTML 6\Imagens\carros\oniz\painel2.webp" />
+    <Content Include="HTML 6\Imagens\carros\oniz\painel3.webp" />
+    <Content Include="HTML 6\Mapa do Site\Mapa do Site.vsdx" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3275</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3275/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
